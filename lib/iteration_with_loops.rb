@@ -54,3 +54,4 @@ def join_nested_string(src)
   print complete_string
 
 end
+end
