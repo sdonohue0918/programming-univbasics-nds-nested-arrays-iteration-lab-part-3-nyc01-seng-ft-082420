@@ -24,25 +24,37 @@ def join_nested_strings(src)
   # src will be an Array of Arrays of Strings and Integers
   # Combine all Strings present in the AoA into a single value and return it
 
-    row_index = 0
-    while row_index < src.count do
-      element_index = 0
+  mixed_data = [
+  ["The", 4, "quick"],
+  [-1, "brown", "fox", 30],
+  ["studied", 101, 233, "Ruby"]
+]
 
-      while element_index < src[row_index].count do
-          unless src[row_index][element_index].class == Integer
-            src[row_index][element_index].concat
-            end
 
-        element_index += 1
 
+
+def join_nested_string(src)
+  complete_string = []
+  src.flatten
+ 
+ 
+ 
+  row_index = 0
+  while row_index < src.count do
+    element_index = 0
+    while element_index < src[row_index].count do
+      if src[row_index][element_index].class == String
+      complete_string.push(src[row_index][element_index])
       end
-
-      row_index += 1
-
-      end
-
-
-      puts src
-
-
+      element_index += 1
+    end
+    row_index += 1
   end
+  
+  print complete_string
+  
+end
+
+
+
+ 
