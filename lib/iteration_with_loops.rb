@@ -44,7 +44,7 @@ def join_nested_string(src)
     element_index = 0
     while element_index < src[row_index].count do
       if src[row_index][element_index].class == String
-      complete_string.push(src[row_index][element_index])
+      complete_string.push(src[row_index][element_index]).to_s
       end
       element_index += 1
     end
