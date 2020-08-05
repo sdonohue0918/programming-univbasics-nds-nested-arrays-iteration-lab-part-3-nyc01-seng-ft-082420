@@ -44,14 +44,15 @@ def join_nested_string(src)
     element_index = 0
     while element_index < src[row_index].count do
       if src[row_index][element_index].class == String
-      complete_string.push(src[row_index][element_index]).to_s
+      complete_string.push(src[row_index][element_index])
       end
+
       element_index += 1
     end
     row_index += 1
+
   end
+  sauce_marauder = complete_string.join(" ")
+  print sauce_marauder
 
-  print complete_string
-
-end
 end
