@@ -34,7 +34,7 @@ def join_nested_strings(src)
 
 
 def join_nested_string(src)
-  complete_string = " "
+  complete_string = []
   src.flatten
 
 
