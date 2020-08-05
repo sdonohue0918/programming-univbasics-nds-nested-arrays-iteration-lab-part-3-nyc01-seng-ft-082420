@@ -36,9 +36,9 @@ def join_nested_strings(src)
 def join_nested_string(src)
   complete_string = []
   src.flatten
- 
- 
- 
+
+
+
   row_index = 0
   while row_index < src.count do
     element_index = 0
@@ -50,11 +50,7 @@ def join_nested_string(src)
     end
     row_index += 1
   end
-  
+
   print complete_string
-  
+
 end
-
-
-
- 
