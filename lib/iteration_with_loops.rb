@@ -53,7 +53,7 @@ def join_nested_string(src)
 
   end
   sauce_marauder = complete_string.join(" ")
-  puts sauce_marauder
+  return sauce_marauder
 
 end
 end
